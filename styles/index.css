@@ -1,0 +1,207 @@
+/* main styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+
+
+/* about-section styles */
+#about-section {
+  display: flex;
+  background-image: url("../images/bg.png");
+
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat-y;
+
+  animation: looping 600s infinite linear;
+}
+
+@keyframes looping {
+  to {background-position: 0  -3000vh;}
+}
+
+
+#about-me {
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+
+  width: 60%;
+  margin: auto;
+
+  border-radius: 15px;
+  background-color: #3c4256b0;
+  box-shadow: 0px 2px 100px 50px #6b8ee0;
+  backdrop-filter: blur(10px);
+
+  text-align: center;
+}
+
+#main-logo {
+  width: 100px;
+  border-radius: 50%;
+
+  user-select: none;
+}
+
+#about-me p, h1, h2 {
+  color: #fafafa;
+}
+
+h2 {
+  font-weight: normal;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+#about-me p {
+  margin-top: 20px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+
+
+
+/* social-links styles */
+#social-links {
+  margin-top: 10px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+
+#links-list {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#links-list li {
+  margin-top: 5px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 7px;
+  padding-right: 10px;
+
+  border-radius: 50%;
+  border: 1px solid #fafafa;
+  transition: transform 0.3s linear;
+}
+
+#links-list li:hover {
+  transform: scale(1.25);
+  box-shadow: 0px 0px 10px #6b8ee0;
+} 
+
+#links-list img {
+  width: 35px;
+  transition: transform 0.3s linear;
+}
+
+#links-list li:hover img {
+  transform: scale(1.05);
+  
+}
+
+#links-list a {
+  color: #fafafa;
+}
+
+#links-list a:visited {
+  color: #fafafa;
+}
+
+@media screen and (max-width: 1025px) { 
+  #about-section {
+    height: 115%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #about-section {
+    height: 110%;
+  }
+
+  #about-me {
+    width: 75%;
+    background-color: #3c425680;
+    box-shadow: 0px 2px 100px 30px #6b8ee0;
+    backdrop-filter: blur(10px);
+  }
+
+  #about-me p {
+    font-size: 2vw;
+  }
+
+  #links-list img {
+    width: 30px;
+  }
+
+  h1 {
+    font-size: 4vw;
+  }
+
+  h2 {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #about-section {
+    height: 100%;
+  }
+  
+  #about-me {
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #3c425640;
+  }
+
+  #about-me p {
+    font-size: 3vw;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  #main-logo {
+    width: 70px;
+  }
+
+  h1 {
+    font-size: 5.6vw;
+  }
+
+  h2 {
+    font-size: 4vw;
+  }
+
+  #links-list li {
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    padding-bottom: 5px;
+  }
+
+  #links-list img {
+    width: 25px;
+  }
+}
